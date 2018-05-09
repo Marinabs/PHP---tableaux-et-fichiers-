@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> <!-- https://fontawesome.com/get-started -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="global.js"></script>
+  <style>
+  body{
+  }
+  
+  #container{
+  width: 900px;
+  margin: 0 auto;
+  }
+  
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 20px 25px;
+	  height:200px;
+  }
+  .container-fluid {
+      padding: 10px 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+  </style>
+</head>
+<body id="container">
+
+<div class="jumbotron">
+  <h2>Developpement Company of WEB-COFFEE</h2> 
+  <p>We drink coffee</p> 
+</div>
+
+
+<!-- Container (Coffee Section) -->
+<div class="container-fluid text-center">
+  <h1>Coffee</h1>
+  <br>
+ 
+  <div class="row">
+  
+    <div class="col-sm-4">
+	  <form id="FormLister" action="option1.php" method="POST">
+        <h3><span class="fas fa-coffee"></span> Option 1</h3>
+        <p>Afficher le contenu du fichier dans une page Web(par un tableau HTML)</p>
+		<input type="button"  value="Afficher" onClick="resultat()">
+	  </form>	
+    </div>
+	
+    <div class="col-sm-4">
+	  <form id="FormJourDonnee" action="option2.php" method="POST">
+        <h3><span class="fas fa-coffee"></span> Option 2</h3>
+        <p>Liste de tous les programmeurs qui ont consomme des tasses de cafe pour une journee donnee</p>
+	      <select name="joursemaine" id="joursemaine">
+			  <option value="Lundi">Lundi</option>
+			  <option value="Mardi">Mardi</option>
+			  <option value="Mercredi">Mercredi</option>
+			  <option value="Jeudi">Jeudi</option>
+			  <option value="Vendredi">Vendredi</option>
+		  </select>
+	  <input type="button"  value="Afficher" onClick="resultat2()">
+	  </form>
+	</div>
+	
+    <div class="col-sm-4">
+      <h3><span class="fas fa-coffee"></span> Option 3</h3>
+      <p><a href="option3.php">Le nom du programmeur qui a consomme le plus de tasses de cafe</a></p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+	  <form id="FormMoyenneTasse" action="option4.php" method="POST">
+      <h3><span class="fas fa-coffee"></span> Option 4</h3>
+      <p><a href="option4.php">La moyenne de tasses de cafe consomme par jour de la semaine</a></p>
+	  </form>
+    </div>
+    <div class="col-sm-4">
+	  <form id="FormPersonneDonnee" action="option5.php" method="POST">
+      <h3><span class="fas fa-coffee"></span> Option 5</h3>
+      <p>Pour un programmeur donne le nombre de tasses consommees</p>
+	        <select name="personne" id="personne">
+			  <option value="Gilbert">Gilbert</option>
+			  <option value="Wally">Wally</option>
+			  <option value="Edgar">Edgar</option>
+			  <option value="Eugene">Eugene</option>
+			  <option value="Josephine">Josephine</option>
+			  <option value="Clarence">Clarence</option>
+		  </select>
+		  <input type="button"  value="Afficher" onClick="resultat5()">
+	   </form>
+    </div>
+    <div class="col-sm-4">
+	 <form id="FormJourGrandMoyenneTasse" action="option6.php" method="POST">
+      <h3><span class="fas fa-coffee"></span> Option 6</h3>
+      <p> <a href="option6.php"> Le jour de la semaine qui a la moyenne de consommation la plus elevee </a> </p>
+    </form>
+	</div>
+  </div>
+</div>
+
+</body>
+</html>
